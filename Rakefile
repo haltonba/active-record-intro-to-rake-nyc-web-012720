@@ -21,7 +21,7 @@ desc "drop into pry console"
   
 namespace :db do
   desc "migrates changes to database"
-    task :migrate => :environment
+    task :migrate => :environment do
       Student.create_table
     end
   desc "seeds database with dummy data"
