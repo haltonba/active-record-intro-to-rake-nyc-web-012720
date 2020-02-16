@@ -19,15 +19,15 @@ desc "drop into pry console"
     Pry.start
   end
   
-namespace :db do
-  desc "migrates changes to database"
-    task :migrate => :environment
-      Student.create_table
-    end
-  desc "seeds database with dummy data"
-    task :seed => :environment do
-      require_relative './db/seeds.rb'
-    end
-end
+# namespace :db do
+#   desc "migrates changes to database"
+#     task :migrate => :environment
+#       Student.create_table
+#     end
+#   desc "seeds database with dummy data"
+#     task :seed => :environment do
+#       require_relative './db/seeds.rb'
+#     end
+# end
 
 
