@@ -9,4 +9,9 @@ namespace :greeting do
     end
 end
 
+desc "connects to environment.rb"
+  task :environment do
+    require_relative './config/environment.rb'
+  end
+
 
