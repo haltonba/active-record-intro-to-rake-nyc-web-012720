@@ -18,5 +18,7 @@ desc "drop into pry console"
   task :console => :environment do
     Pry.start
   end
+  
+namespace
 
 
