@@ -19,6 +19,11 @@ desc "drop into pry console"
     Pry.start
   end
   
-namespace
+namespace :db do
+  desc "migrates changes to database"
+    task :migrate => :environment
+      Student.create_table
+    end
+end
 
 
