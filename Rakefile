@@ -24,6 +24,10 @@ namespace :db do
     task :migrate => :environment
       Student.create_table
     end
+  desc "seeds database with dummy data"
+    task :seed => :environment do
+      require_relative
+    end
 end
 
 
